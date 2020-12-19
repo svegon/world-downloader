@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "world-downloader",
+  "version": "${version}",
+
+  "name": "World Downloader",
+  "description": "This is a fabricified version of Pokechu22's World Downloader mod.",
+  "authors": [
+	"Pokechu22",
+	"Svegon"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Pokechu22/WorldDownloader/issues/133",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/icon/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.world.downloader.WorldDownloaderInit"
+    ],
+    "client": [
+      "net.world.downloader.WorldDownloaderInit"
+    ]
+  },
+  "mixins": [
+    "world-downloader.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.world.downloader.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+	"ClientPlayNetworkHandlerMixin",
+	"ClientWorldMixin",
+	"CrashReportMixin",
+	"GameMenuMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
